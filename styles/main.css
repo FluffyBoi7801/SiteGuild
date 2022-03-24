@@ -1,0 +1,129 @@
+@font-face {
+	font-family: 'TerminatorGenisys'; 
+	src: local('TerminatorGenisys'),
+		url('../fonts/TerminatorGenisys.ttf'); 
+}
+
+@font-face {
+	font-family: 'AvenirNextCyr'; 
+	src: local('AvenirNextCyr'),
+		url('../fonts/AvenirNextCyr/AvenirNextCyr-Medium.ttf'); 
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'AvenirNextCyr', sans-serif;
+    color: white;
+}
+
+body{
+    background-color: #010003;
+    padding-top: 80px;
+}
+
+.wrapper {
+    padding: 0% 8%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    height: 81px;
+    width: 158px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0% 3% 0% 5%;
+    min-width: 800px;
+    justify-content: space-between;
+}
+
+header li {
+    font-size: 0.8em;
+}
+
+header .connect {
+    color: black;
+    background: rgb(35,178,214);
+    background: linear-gradient(169deg, rgba(35,178,214,1) 0%, rgba(99,109,218,1) 100%);
+    padding: 10px 30px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+}
+
+.about .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgGradient {
+    margin-right: -6%;
+    background: rgb(16,9,49);
+    background: linear-gradient(157deg, rgba(16,9,49,1) 0%, rgba(32,7,103,1) 35%, rgba(16,9,49,1) 100%);
+    border-radius: 4px;
+    margin-top: 24px;
+    margin-bottom: 50%;
+}
+
+.about img {
+    width: 720px;
+    margin: 10px;
+}
+
+.about h1 {
+    font-weight: bold;
+}
+
+.about p {
+    margin-top: 40px;
+    line-height: 1.7;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+.info {
+    margin-right: 3%;
+}
+
+.gildya {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gildya p {
+    font-family: 'TerminatorGenisys';
+    font-size: 2em;
+    z-index: 1;
+    margin-top: 10%;
+}
+
+.gildya img {
+    width: -webkit-fill-available;
+    position: absolute;
+}
+
+.gildya .ticket {
+    background-color: blue;
+    padding: 1% 14%;
+    font-family: 'TerminatorGenisys';
+    font-size: 2em;
+    z-index: 1;
+    margin-top: 46%;
+}
