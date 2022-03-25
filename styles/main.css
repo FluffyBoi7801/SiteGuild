@@ -92,6 +92,10 @@ header .connect {
     text-align: center;
 }
 
+header a {
+    text-decoration: none;
+}
+
 .about {
     display: flex;
     flex-direction: row;
