@@ -5,9 +5,35 @@
 }
 
 @font-face {
+    font-family: 'AlienMine';
+    src: local('AlienMine'),
+        url('../fonts/Alien\ Mine.ttf');
+}
+
+@font-face {
 	font-family: 'AvenirNextCyr'; 
 	src: local('AvenirNextCyr'),
 		url('../fonts/AvenirNextCyr/AvenirNextCyr-Medium.ttf'); 
+}
+
+html *
+{
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}
+
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar {
+  width: 6px;
+}
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb {
+  background-color: #23679c;
+  border-radius: 6px;
 }
 
 *{
@@ -253,9 +279,214 @@ header .connect {
     background-color: blue;
     padding: 1% 14%;
     font-family: 'TerminatorGenisys';
-    font-size: 1.5em;
+    font-size: 1.2em;
     z-index: 1;
     cursor: pointer;
     margin-bottom: 60px;
     margin-top: 80px;
+    text-align: center;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.education h1 {
+    text-align: center;
+    background: url('../img/textBG.png');
+    background-size: contain;
+    font-family: 'TerminatorGenisys';
+    font-size: 1.6em;
+    padding: 13px;
+    padding-right: 35px;
+    padding-left: 35px;
+    width: 531px;
+    height: 56px;
+    margin-bottom: 120px;
+}
+
+.educationText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.5;
+    width: 100%;
+    padding: 70px;
+    background-image: url('../img/educationBorder.png');
+    background-size: cover;
+}
+
+.educationText > * {
+    text-align: center;
+    margin-top: 5.5%;
+    font-size: 1.4em;
+}
+
+.educationButton {
+    width: 700px;
+    text-align: center;
+    background-color: blue;
+    padding: 1% 8%;
+    font-family: 'TerminatorGenisys';
+    font-size: 2em;
+    z-index: 1;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+.marketplace {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+.marketplace h1 {
+    text-align: center;
+    background: url('../img/textBG.png');
+    background-size: contain;
+    font-family: 'TerminatorGenisys';
+    font-size: 1.6em;
+    padding: 13px;
+    padding-right: 35px;
+    padding-left: 35px;
+    width: 531px;
+    height: 56px;
+    margin-bottom: 120px;
+}
+
+.marketplace img {
+    width: 119%;
+    margin-top: -140px;
+}
+
+.fund {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.fund h1 {
+    text-align: center;
+    background: url('../img/textBG.png');
+    background-size: contain;
+    font-family: 'TerminatorGenisys';
+    font-size: 1.6em;
+    padding: 13px;
+    padding-right: 35px;
+    padding-left: 35px;
+    width: 531px;
+    height: 56px;
+    margin-bottom: 60px;
+}
+
+.fundContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.fundButton {
+    background-color: blue;
+    padding: 2% 5%;
+    font-family: 'TerminatorGenisys';
+    font-size: 1.5em;
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 80px;
+    text-align: center;
+    align-self: flex-start;
+    margin-left: 20px;
+}
+
+.fundLeftContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fundLeftContainer p { 
+    text-align: start;
+    line-height: 1.5;
+    font-size: 1.3em;
+}
+
+.fundImg {
+    min-width: 50%;
+    padding-top: 44%;
+    background-image: url('../img/fundBG.png');
+    background-size: cover;
+}
+
+.tokenomics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tokenomics > h1 {
+    text-align: center;
+    background: url('../img/textBG.png');
+    background-size: contain;
+    font-family: 'TerminatorGenisys';
+    font-size: 1.6em;
+    padding: 13px;
+    padding-right: 35px;
+    padding-left: 35px;
+    width: 531px;
+    height: 56px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.tokenomics > p {
+    font-size: 1.7em;
+    margin-bottom: 20px;
+}
+
+.tokenomicsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 1200px;
+}
+
+.tLeft {
+    min-height: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tRight {
+    min-height: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tCard {
+    font-size: 2em;
+}
+
+.tCard h1 {
+    color: rgba(22, 196, 212, 1);
+    text-shadow: 0px 0px 30px rgba(22, 196, 212, 1);
+    font-family: 'AlienMine';
+}
+
+.tCard p {
+    font-size: 0.6em;
 }
