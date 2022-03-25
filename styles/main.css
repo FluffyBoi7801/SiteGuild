@@ -40,6 +40,47 @@ html *::-webkit-scrollbar-thumb {
   border-radius: 6px;
 }
 
+.glow {
+    background: radial-gradient(circle, rgba(67,4,255,0.6) 0%, rgba(3,0,13,0.10101540616246496) 85%, rgba(0,0,0,0) 100%);
+    z-index: -1;
+    position: absolute;
+    min-width: 150px;
+    min-height: 150px;
+}
+
+.glowLong {
+    background: linear-gradient(0deg, rgba(34,193,195,0) 0%, rgba(161,104,255,0.5) 40%, rgba(161,104,255,0.5) 60%, rgba(253,187,45,0) 100%);
+    z-index: -1;
+    position: absolute;
+    min-width: 700px;
+    min-height: 150px;
+}
+
+.glowShort {
+    background: linear-gradient(0deg, rgba(34,193,195,0) 0%, rgba(161,104,255,0.5) 40%, rgba(161,104,255,0.5) 60%, rgba(253,187,45,0) 100%);
+    z-index: -1;
+    position: absolute;
+    min-width: 290px;
+    min-height: 150px;
+}
+
+.moneyBG {
+    min-width: 1200px;
+    min-height: 420px;
+    z-index: -1;
+    background: url('../img/nftBG.png');
+    position: absolute;
+}
+
+.moneyBG2 {
+    width: 78%;
+    min-height: 628px;
+    z-index: -1;
+    background: url(../img/moneyBG2.png);
+    position: absolute;
+    margin-top: 350px;
+}
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -156,7 +197,8 @@ header a {
 }
 
 .gildya .ticket {
-    background-color: blue;
+    background-image: url('../img/button.png'), radial-gradient(circle, rgba(67,4,255,1) 0%, rgba(0,0,0,0.09541316526610644) 100%);
+    background-blend-mode: hue;
     padding: 1% 14%;
     font-family: 'TerminatorGenisys';
     font-size: 2em;
@@ -206,7 +248,11 @@ header a {
 }
 
 .materialsButton {
-    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../img/button2.png'), rgba(85,34,237,0.15);
+    background-blend-mode: hue;
     padding: 1% 14%;
     font-family: 'TerminatorGenisys';
     font-size: 2em;
@@ -284,7 +330,11 @@ header a {
 }
 
 .moneyButton {
-    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/button.png'), radial-gradient(circle, rgba(67,4,255,1) 0%, rgba(0,0,0,0.09541316526610644) 100%);
+    background-blend-mode: hue;
     padding: 1% 14%;
     font-family: 'TerminatorGenisys';
     font-size: 1.2em;
@@ -300,7 +350,7 @@ header a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 160px;
 }
 
 #education h1 {
@@ -324,27 +374,36 @@ header a {
     flex-direction: column;
     line-height: 1.5;
     width: 100%;
-    padding: 70px;
-    background-image: url('../img/educationBorder.png');
-    background-size: cover;
+    padding: 50px;
+    background-image: url(../img/educationBorder.png);
+    background-position: 58% 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 24px;
+    padding-right: 14%;
+    padding-left: 16%;
 }
 
 .educationText > * {
     text-align: center;
     margin-top: 5.5%;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 .educationButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 700px;
     text-align: center;
-    background-color: blue;
+    background: url('../img/button2.png'), rgba(85,34,237,0.15);
+    background-blend-mode: hue;
     padding: 1% 8%;
     font-family: 'TerminatorGenisys';
     font-size: 2em;
     z-index: 1;
     cursor: pointer;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 #marketplace {
@@ -404,7 +463,11 @@ header a {
 }
 
 .fundButton {
-    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../img/button2.png'), rgba(85,34,237,0.15);
+    background-blend-mode: hue;
     padding: 2% 5%;
     font-family: 'TerminatorGenisys';
     font-size: 1.5em;
