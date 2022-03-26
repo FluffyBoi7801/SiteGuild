@@ -106,11 +106,32 @@ html *::-webkit-scrollbar-thumb {
     margin-top: 350px;
 }
 
-*{
+.mobMenuButton {
+    display: none;
+}
+
+#mobileOnly {
+    display: none;
+}
+
+* {
     margin: 0;
     box-sizing: border-box;
     font-family: 'AvenirNextCyr', sans-serif;
     color: white;
+}
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #23679c transparent;
 }
 
 body{
@@ -495,7 +516,7 @@ header a {
 }
 
 #marketplace img {
-    width: 119%;
+    min-width: 119%;
     margin-top: -140px;
 }
 
@@ -662,7 +683,7 @@ header a {
 }
 
 .social img {
-    width: 119%;
+    min-width: 119%;
     margin-top: -140px;
 }
 
@@ -875,4 +896,506 @@ footer {
 
 .contacts p {
     margin-left: 10px;
+}
+
+@media screen and (max-width: 1199px) {
+    * {
+        max-width: 100%;
+    }
+
+    body {
+        padding-top: 30px;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    header img {
+        height: auto;
+        width: 20%;
+    }
+
+    header .connect {
+        width: 80px;
+        height: fit-content;
+        font-size: 0.4em;
+        padding: 1.3%;
+    }
+
+    .mobMenuButton {
+        display: initial;
+        width: 22px;
+        height: 13px;
+        background: url('../img/icons/mobMenu.png');
+        background-size: cover;
+    }
+
+    .about {
+        margin-top: 20px;
+        flex-direction: column-reverse;
+    }
+
+    .imgGradient {
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .about img {
+        width: 100%;
+        margin: 4px;
+    }
+
+    .glow {
+        display: none;
+    }
+
+    .info {
+        margin-top: 20px;
+    }
+
+    .about h1 {
+        font-size: 0.5em;
+    }
+
+    .about p {
+        font-size: 0.4em;
+        line-height: 1.4;
+        margin-top: 10px;
+    }
+
+    .gildya img {
+        width: 50%;
+    }
+
+    .gildya > img {
+        width: 100%;
+    }
+
+    .gildya .ticket {
+        width: 60%;
+        height: auto;
+        font-size: 0.4em;
+        padding: 4px 0px;
+        text-align: center;
+    }
+
+    .card {
+        width: 70px;
+        height: 38px;
+        margin-bottom: 30px;
+    }
+
+    .gildya p {
+        margin: 0;
+        margin-top: 0px;
+        padding: 0;
+        font-size: 0.2em;
+        margin-top: 2px;
+    }
+
+    .gildya > p {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-size: 0.6em;
+        text-align: center;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .card .between {
+        padding: 0;
+        margin: 0;
+        margin-top: 0px;
+        font-size: 0.4em;
+        margin-top: -10px;
+    }
+
+    .materialsButton {
+        width: 64%;
+        height: fit-content;
+        padding: 1% 20%;
+        font-size: 0.7em;
+    }
+
+    .materialsButton span {
+        height: 1px;
+        width: 120%;
+    }
+
+    .materialCards {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .materialsCard {
+        width: 67px;
+        padding: 5px;
+        margin: 0;
+        max-height: 135px;
+    }
+
+    .materialsCard::before {
+        width: 35px;
+        height: 50px;
+        left: -12px;
+        top: -37px;
+    }
+
+    .materialsCard img {
+        width: 34px;
+    }
+
+    .materialsCard > p {
+        margin: 0;
+        margin-top: 28px;
+        font-size: 0.2em;
+    }
+
+    .glowCards {
+        min-width: 100px;
+        min-height: 100px;
+        left: -50px;
+        top: 8px;
+    }
+
+    .glowRight {
+        left: 16px;
+    }
+
+    #PConly {
+        display: none;
+    }
+
+    #mobileOnly {
+        display: initial;
+        width: 100%;
+    }
+
+    .marginLeft22 {
+        margin-left: -22%;
+    }
+
+    #money {
+        margin-top: 0px;
+    }
+
+    #money h1 {
+        font-size: 0.5em;
+        width: 170px;
+        height: 18px;
+        padding: 1.6px;
+        text-align: center;
+        padding-top: 3px;
+        margin-bottom: 20px;
+    }
+
+    .moneyContent {
+        margin: 0;
+        line-height: 1.5;
+        font-size: 0.4em;
+    }
+
+    .moneyButton {
+        margin-top: 16px;
+        padding: 3px;
+    }
+
+    .moneyBG {
+        width: 100%;
+        min-width: 100px;
+        min-height: 70px;
+        background-size: cover;
+        padding-top: 35%;
+        margin-top: -40px;
+    }
+
+    .moneyBG2 {
+        width: 100%;
+        min-width: 100px;
+        min-height: 70px;
+        background-size: cover;
+        padding-top: 52%;
+        margin-top: 70px;
+    }
+
+    .moneyButton {
+        font-size: 1.3em;
+    }
+
+    #education {
+        margin-top: 0px;
+    }
+
+    #education h1 {
+        width: 170px;
+        height: 18px;
+        padding: 0;
+        font-size: 0.8em;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .educationText {
+        padding: 0;
+        font-size: 0.4em;
+        background-image: url();
+    }
+
+    .educationText p {
+        text-align: justify;
+        margin: 10px 20px 0px 20px;
+    }
+
+    .educationButton {
+        width: 150px;
+        height: 24px;
+        font-size: 1.5em;
+    }
+
+    .glowLong {
+        min-width: 150px;
+        min-height: 50px;
+    }
+
+    #marketplace {
+        margin-top: 0px;
+    }
+
+    #marketplace h1 {
+        width: 170px;
+        height: 18px;
+        padding: 0;
+        font-size: 0.8em;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    #marketplace > p {
+        font-size: 0.4em;
+    }
+
+    #marketplace > img {
+        width: 119%;
+        margin-top: 0px;
+    }
+
+    #fund > h1 {
+        width: 170px;
+        height: 18px;
+        padding: 0;
+        font-size: 0.8em;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .fundLeftContainer {
+        font-size: 0.27em;
+    }
+
+    .fundLeftContainer > p {
+        font-size: 175%;
+    }
+
+    .fundButton {
+        margin: 10px 0px 0px 0px;
+        width: 100%;
+        height: 16px;
+    }
+
+    .glowShort {
+        min-width: 86px;
+        width: 42%;
+        min-height: 30px;
+    }
+
+    .glowNft {
+        min-width: 100px;
+        min-height: 100px;
+        margin-right: 0;
+    }
+
+    .tokenomics > h1 {
+        width: 170px;
+        height: 18px;
+        padding: 0;
+        font-size: 0.8em;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .tokenomics > p {
+        font-size: 40%;
+    }
+
+    .tokenomicsContainer {
+        flex-direction: column;
+        min-width: 200px;
+    }
+
+    .tCenter img {
+        width: 190px;
+    }
+
+    .tCard {
+        margin: 5px;
+        font-size: 0.6em;
+    }
+
+    .tLeft {
+        min-height: initial;
+        flex-direction: row;
+    }
+
+    .tRight {
+        min-height: initial;
+        flex-direction: row;
+    }
+
+    .social {
+        margin-top: 30px;
+    }
+
+    .social > h1 {
+        width: 170px;
+        height: 18px;
+        padding: 4px;
+        font-size: 0.5em;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .social > img {
+        margin-top: initial;
+    }
+
+    .partners {
+        margin-top: 20px;
+    }
+
+    .partners > h1 {
+        width: 170px;
+        height: 18px;
+        padding: 1px;
+        font-size: 0.8em;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .partnerCards {
+        flex-wrap: wrap;
+        min-height: 180px;
+    }
+
+    .partnerCard {
+        margin: 5px;
+        width: 70px;
+        height: 82px;
+        background-size: cover;
+    }
+
+    .partnerCard > img {
+        width: 60%;
+    }
+
+    #team > h1 {
+        width: 170px;
+        height: 18px;
+        padding: 0px;
+        font-size: 0.8em;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .teamCards {
+        justify-content: center;
+    }
+
+    .teamCard {
+        margin: 5px;
+    }
+
+    .teamCard > div {
+        width: 100px;
+        height: 138px;
+        background-size: contain;
+    }
+
+    .teamCard > h1 {
+        text-align: center;
+        font-size: 0.6em;
+        margin-top: 10px;
+    }
+
+    .teamCard > p {
+        text-align: center;
+        font-size: .4em;
+    }
+
+    #news {
+        margin-top: 40px;
+        margin-bottom: 120px;
+    }
+
+    #news > h1 {
+        width: 170px;
+        height: 18px;
+        padding: 0px;
+        font-size: 0.8em;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .breakingNews {
+        width: initial;
+        height: 126px;
+        font-size: .4em;
+        margin: 0;
+        margin-top: 0px;
+        margin-top: 20px;
+    }
+
+    .newsPhoto {
+        width: 124px;
+        height: 98%;
+        margin-right: -40px;
+        margin-left: -10px;
+        background-size: cover;
+    }
+
+    .newsText {
+        max-width: 65%;
+        margin-right: 0;
+        margin-left: 8px;
+    }
+
+    footer {
+        font-size: 0.4em;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer > img {
+        width: 60px;
+    }
+
+    .contacts > img {
+        width: 14px;
+    }
+
+    .partnerCards > img {
+        right: 0;
+        width: 50%;
+    }
+
+    .fundContainer > img {
+        width: 100%;
+    }
 }
